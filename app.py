@@ -27,6 +27,22 @@ def get_books():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username")})
+
+        if existing_user:
+            flash("This username already exists, please try anothe")
+            return register(url_for("register"))
+
+        register = {
+            "username": request.form.get("usename"),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        session["user"] = request.form.get("username")
+        flash("Welcome to our library!")
     return render_template("register.html")
 
 
