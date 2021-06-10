@@ -1,6 +1,134 @@
+# Virtual Book's Library #
+
+Books are important for the mind, heart, and soul. People always will be reading books. Due to enourmous amount of them in the world, Virtual Book's Library will help book lovers to keep their favourite books in one place.
+
+# UX #
+
+## Strategy plane ##
+The aim of the project is to create an interactive book's library that would be fully responsive on all devices and screens. The 
+target will be all aged love readers, so website should be simple to understand and easy to navigate.
+
+## Scope plane ##
+The library will be styled in a minimalistic design. It will allow users to log in and log out of app, add books which they already read with full description of the book. Create a book wish list. Also they can browse through other customers books and 
+find new books. 
+
+## Structure plane ##
+The main page will have list of books on the website, entered by all users. User will be able to log in, by pressing login button and view his profile with his books. He will be able to search for new books or add new books manually with Name of the book, Author, pages, year of publicity and small book description. 
+
+## Skeleton plane ##
+All website will be created in same design. 
+
+The wireframe for [mobile version](https://____) and [desktop version](https://____) of the APP.
+
+## Surfuce plane ##
+
+
+# User Stories: #
+1. As a user, I would like to have my personal profile.
+2. As a user, I would like to add new books in my profile.
+3. As a user, I would like to update books description after reading it.
+5. As a user, I would like to delete books from my list.
+6. As a user, I would like to browse through books on the website.
+7. As a user, I would like to log out from my profile.
+
+Mockup
+[![responsive.png](https://____.png)](https://______)
+
+The live version of project you can see [here.](https://____)
+
+# Features #
+
+### Existing features ###
+Website has a simple structure and minimalistic design.
+
+
+
+### Future features ###
+
+
+
+# Technology used #
+- HTML 
+- CSS (the language to style HTML and make bootstrap more individual)
+- JavaScript
+- Google Fonts
+- Jshint
+- W3C school
+- W3C mark up validation service (to test HTML and CSS)
+
+# Testing #
+- HTML tested with W3C mark up validation service. 
+- CSS have been tested with W3C mark up validation service
+- JavaScript code _______ Jshint with no major issues
+- Project's responsiveness ________ on iPhone, Google Chrome, Microsoft Edge
+
+
+## Testing user stories ##
+1. As a user, I would like to 
+
+2. As a user, I would like to 
+
+3. As a user, I would like to 
+
+4. As a user, I would like to 
+
+### Issues ###
+
+
+# Deployment #
+### Managing Git ###
+1. I started with creating a local git repo using the command `git init`; 
+2. I then added to my local repo using `git add .`;
+3. And then commit them to my local repo using `git commit -m "message"`;
+4. Once that was done I push my local repo to the remote (Github) using `git push`.
+
+### GitHub Pages ###
+I deploy my website in these following steps:
+1. Log in on GitHub;
+2. Navigate to needed repositary;
+3. Click Setting on the right corner under repositary name;
+4. Scroll down to GitHub Pages;
+5. Click None and choose Master Branch;
+6. Click Save and link will be created that says "Your site is published at ...".
+
+### Cloning a repositary ###
+If you would like to clone a repositary follow theese steps:
+1. Log in on GitHub;
+2. Navigate to needed repositary;
+3. Above the list of the files, click green button Code;
+4. On the dropdown selection, you will find a link to clone the code with HHTPS;
+5. Open Git Bash;
+6. Open new location where you want to clone repositary;
+7. Type git clone, and then paste the URL you copied earlier.
+8. Press Enter.
+
+# Credits # 
+
+
+### Content ###
+
+
+### Acknowledgements ###
+My mentor Spencer Barriball for his support.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome VKirijanova,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
