@@ -1,3 +1,13 @@
 body {
     background-color: #A37774;
 }
+
+.nav-wrapper {
+    background-color: #FCCA46;
+    text-shadow: 2px, 2px, 2px rgba(0, 0, 0, 0,5);
+}
+
+.sidenav {
+    background-color: #FCCA46;
+}
+
