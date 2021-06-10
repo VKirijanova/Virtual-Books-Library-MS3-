@@ -102,6 +102,8 @@ If you would like to clone a repositary follow theese steps:
 7. Type git clone, and then paste the URL you copied earlier.
 8. Press Enter.
 
+### Heroku deployment ###
+
 # Credits # 
 
 
