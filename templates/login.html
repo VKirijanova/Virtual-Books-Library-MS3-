@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block main_page %}
 
-    <h3 class="center-align">Sign Up Here!</h3>
+    <h3 class="center-align">Log In</h3>
 
     <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
             <div class="card-panel">
                 <div class="row">
                     <div class="input-field col s12">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="row">
                     <button id="register_button" type="submit" class="col s6 offset-m3 btn-large text-stadow">
-                        Sign Up <i class="fas fa-sign-in-alt"></i>
+                        Log In <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
              </div>
