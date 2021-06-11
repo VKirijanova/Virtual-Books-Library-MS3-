@@ -22,7 +22,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_books') }}" class="black-text text-darken-2">Home</a></li>
                     <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">MyPage</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Add New Book</a></li>
+                    <li><a href="{{ url_for('add_book') }}" class="black-text text-darken-2">Add New Book</a></li>
                     <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>
                     <li><a href="{{ url_for('logout') }}" class="black-text text-darken-2">Log Out</a></li>
@@ -35,7 +35,7 @@
                     <li><h4 class="center-align">Virtual Books Library</h4></li>
                     <li><a href="{{ url_for('get_books') }}" class="black-text text-darken-2">Home</a></li>
                     <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">My Page</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Add New Book</a></li>
+                    <li><a href="{{ url_for('add_book') }}" class="black-text text-darken-2">Add New Book</a></li>
                     <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>
                     <li><a href="{{ url_for('logout') }}" class="black-text text-darken-2">Log Out</a></li>
