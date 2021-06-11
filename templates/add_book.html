@@ -4,7 +4,7 @@
 <h3 class="center-align">Add Book</h3>
 
 <div class="row">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('add_book') }}">
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-user-circle prefix"></i>
@@ -60,6 +60,14 @@
                 <i class="fas fa-user-circle prefix"></i>
                 <input id="purchase_link" name="purchase_link" type="text" class="validate">
                 <label for="purchase_link">Purchase Link</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <button id="register_button" type="submit" class="btn-large waves-effect text-shadow" 
+                    name="action">
+                    Add Book <i class="fas fa-plis-square right"></i>
+                </button>
             </div>
         </div>
     </form>
