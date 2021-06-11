@@ -25,7 +25,7 @@ def get_books():
     return render_template("books.html", books=books)
 
 
-#to register
+#Register to app
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -49,7 +49,7 @@ def register():
     return render_template("register.html")
 
 
-#log in
+# Log in
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -74,6 +74,7 @@ def login():
     return render_template("login.html")
 
 
+# Users My Page
 @app.route("/mypage/<username>", methods=["GET", "POST"])
 def mypage(username):
     username = mongo.db.users.find_one(
@@ -85,6 +86,7 @@ def mypage(username):
     return redirect(url_for("login"))
 
 
+# Log out of profile
 @app.route("/logout")
 def logout():
     flash("You have been logged out")
@@ -92,6 +94,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add New Books
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
@@ -112,6 +115,7 @@ def add_book():
     return render_template("add_book.html", styles=styles)
 
 
+# Edit Books 
 @app.route("/edit_books/<books_id>", methods=["GET", "POST"])
 def edit_books(books_id):
     if request.method == "POST":
@@ -132,11 +136,24 @@ def edit_books(books_id):
     return render_template("edit_books.html", book=book, styles=styles)
 
 
+# Delete Button
 @app.route("/delete_books/<books_id>")
 def delete_books(books_id):
     mongo.db.books.remove({"_id": ObjectId(books_id)})
     flash("Book Succesfully Deleted")
     return redirect(url_for("get_books"))
+
+
+# Wish List Page
+@app.route("/wish_list/<username>", methods=["GET", "POST"])
+def wish_list(username):
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+
+    if session["user"]:
+        return render_template("wish_list.html", username=username)
+
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":

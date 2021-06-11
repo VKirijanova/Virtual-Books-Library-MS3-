@@ -24,7 +24,7 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">MyPage</a></li>
                     <li><a href="{{ url_for('add_book') }}" class="black-text text-darken-2">Add New Book</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
+                    <li><a href="{{ url_for('wish_list', username=session['user']) }}" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('logout') }}" class="black-text text-darken-2">Log Out</a></li>
                     {% else %}
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>
@@ -41,7 +41,7 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">My Page</a></li>
                     <li><a href="{{ url_for('add_book') }}" class="black-text text-darken-2">Add New Book</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
+                    <li><a href="{{ url_for('wish_list', username=session['user']) }}" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('logout') }}" class="black-text text-darken-2">Log Out</a></li>
                     {% else %}
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>

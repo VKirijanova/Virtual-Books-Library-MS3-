@@ -8,7 +8,7 @@
         <!-- Book Name -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-book prefix"></i>
                 <input id="book_name" name="book_name" minlength="1" maxlength="50" 
                     value="{{ book.book_name }}" type="text" class="validate" required>
                 <label for="book_name">Book Name</label>
@@ -43,9 +43,9 @@
         <!-- Book Description -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix"></i>
+                <i class="fas fa-book-reader prefix"></i>
                 <textarea id="book_description" name="book_description" minlength="5"
-                    maxlength="200" type="text" class="materialize-textarea validate" required>
+                    maxlength="500" type="text" class="materialize-textarea validate" required>
                 {{- book.book_description -}}</textarea>
                 <label for="book_description">Book Description</label>
             </div>
@@ -53,7 +53,7 @@
         <!-- Book Pages -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-images prefix"></i>
                 <input id="book_pages" name="book_pages" type="text" class="validate" value="{{ book.book_pages }} "> 
                 <label for="book_pages">Pages</label>
             </div>
@@ -61,7 +61,7 @@
         <!-- Publishing Year -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-calendar-alt prefix"></i>
                 <input id="published_year" name="published_year" type="text" 
                     class="validate" value="{{ book.published_year }} ">
                 <label for="published_year">Year of Publishing</label>
@@ -70,7 +70,7 @@
         <!-- Purchase Link -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-code prefix"></i>
                 <input id="purchase_link" name="purchase_link" type="text" 
                     class="validate" value="{{ book.purchase_link }} ">
                 <label for="purchase_link">Purchase Link</label>

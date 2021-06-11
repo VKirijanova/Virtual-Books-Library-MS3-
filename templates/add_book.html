@@ -5,14 +5,16 @@
 
 <div class="row">
     <form class="col s12" method="POST" action="{{ url_for('add_book') }}">
+        <!-- Book Name -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-book prefix"></i>
                 <input id="book_name" name="book_name" minlength="1" 
                     maxlength="50" type="text" class="validate" required>
                 <label for="book_name">Book Name</label>
             </div>
         </div>
+        <!-- Book Author -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-user-circle prefix"></i>
@@ -21,6 +23,7 @@
                 <label for="book_author">Author</label>
             </div>
         </div>
+        <!-- Book Style -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix"></i>
@@ -33,35 +36,40 @@
                 <label for="books_style">Book Style</label>
             </div>
         </div>
+        <!-- Book Description -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix"></i>
+                <i class="fas fa-book-reader prefix"></i>
                 <textarea id="book_description" name="book_description" minlength="5"
                     maxlength="200" type="text" class="materialize-textarea validate" required></textarea>
                 <label for="book_description">Book Description</label>
             </div>
         </div>
+        <!-- Book Pages -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-images prefix"></i>
                 <input id="book_pages" name="book_pages" type="text" class="validate">
                 <label for="book_pages">Pages</label>
             </div>
         </div>
+        <!-- Publishing Year -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-calendar-alt prefix"></i>
                 <input id="published_year" name="published_year" type="text" class="validate">
                 <label for="published_year">Year of Publishing</label>
             </div>
         </div>
+        <!-- Purchase Link -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
+                <i class="fas fa-code prefix"></i>
                 <input id="purchase_link" name="purchase_link" type="text" class="validate">
                 <label for="purchase_link">Purchase Link</label>
             </div>
         </div>
+        <!-- Edit Button -->
         <div class="row">
             <div class="col s12 center-align">
                 <button id="register_button" type="submit" class="btn-large waves-effect text-shadow" 
