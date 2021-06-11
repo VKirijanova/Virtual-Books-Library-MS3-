@@ -112,6 +112,13 @@ def add_book():
     return render_template("add_book.html", styles=styles)
 
 
+@app.route("/edit_books/<books_id>", methods=["GET", "POST"])
+def edit_books(books_id):
+    book = mongo.db.books.find_one({"_id": ObjectId(books_id)})
+    styles = mongo.db.styles.find().sort("books_style", 1)
+    return render_template("edit_books.html", book=book, styles=styles)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
