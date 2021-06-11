@@ -1,30 +1,23 @@
 {% extends "base.html" %}
 {% block main_page %}
 
-    {% for book in books %}
-        {{ book.book_name }}<br>
-        {{ book.book_author }}<br>
-        {{ book.published_year }}<br>
-        {{ book.book_pages }}<br>
-        {{ book.book_description }}<br>
-        {{ book.purchase_link }}<br>
-        {{ book.books_style }}<br>
-    {% endfor %}
-
-
     <ul class="collapsible">
+        {% for book in books %}
         <li>
-            <div class="collapsible-header text-shadow"><i class="fas fa-caret-down"></i>First</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header text-shadow">
+                <i class="fas fa-caret-down"></i>
+                <strong>"{{ book.book_name }}"</strong> : {{ book.book_author }}
+            </div>
+            <div class="collapsible-body">
+                <p>Style: {{ book.books_style }}</p>
+                <p>Description: {{ book.book_description }}</p>
+                <p>Pages: {{ book.book_pages }}</p>
+                <p>Published: {{ book.published_year }} year</p>
+                <link rel="stylesheet" href="{{ book.purchase_link }}">
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header text-shadow"><i class="fas fa-caret-down"></i>Second</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header text-shadow"><i class="fas fa-caret-down"></i>Third</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
+
     </ul>
             
 {% endblock %}
