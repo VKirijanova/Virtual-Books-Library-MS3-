@@ -21,7 +21,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_books') }}" class="black-text text-darken-2">Home</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Profile</a></li>
+                    <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">MyPage</a></li>
                     <li><a href="#" class="black-text text-darken-2">Add New Book</a></li>
                     <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>
@@ -34,7 +34,7 @@
                 <ul class="sidenav" id="mobile-demo">
                     <li><h4 class="center-align">Virtual Books Library</h4></li>
                     <li><a href="{{ url_for('get_books') }}" class="black-text text-darken-2">Home</a></li>
-                    <li><a href="#" class="black-text text-darken-2">Profile</a></li>
+                    <li><a href="{{ url_for('mypage', username=session['user']) }}" class="black-text text-darken-2">My Page</a></li>
                     <li><a href="#" class="black-text text-darken-2">Add New Book</a></li>
                     <li><a href="#" class="black-text text-darken-2">Wish List</a></li>
                     <li><a href="{{ url_for('login') }}" class="black-text text-darken-2">Log In</a></li>

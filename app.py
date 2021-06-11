@@ -25,6 +25,7 @@ def get_books():
     return render_template("books.html", books=books)
 
 
+#to register
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -44,9 +45,11 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Welcome to our library!")
+        return redirect(url_for("mypage"), username=session["user"])
     return render_template("register.html")
 
 
+#log in
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -57,7 +60,10 @@ def login():
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    flash("Welcome, {}".format(
+                        request.form.get("username")))
+                    return redirect(url_for(
+                        "mypage", username=session["user"]))
             else:
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
@@ -66,6 +72,13 @@ def login():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
     return render_template("login.html")
+
+
+@app.route("/mypage/<username>", methods=["GET", "POST"])
+def mypage(username):
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("mypage.html", username=username)
 
 
 if __name__ == "__main__":
