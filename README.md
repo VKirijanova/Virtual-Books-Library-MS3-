@@ -9,11 +9,10 @@ The aim of the project is to create an interactive book's library that would be 
 target will be all aged love readers, so website should be simple to understand and easy to navigate.
 
 ## Scope plane ##
-The library will be styled in a minimalistic design. It will allow users to log in and log out of app, add books which they already read with full description of the book. Create a book wish list. Also they can browse through other customers books and 
-find new books. 
+The library will be styled in a minimalistic design. It will allow users to log in and log out of app, add books which they already read with full description of the book. Also they can browse through other customers books and find new books. 
 
 ## Structure plane ##
-The main page will have list of books on the website, entered by all users. User will be able to log in, by pressing login button and view his profile with his books. He will be able to search for new books or add new books manually with Name of the book, Author, pages, year of publicity and small book description. 
+The main page will have list of books on the website, entered by all users. User will be able to log in, by pressing login button and view his profile. He will be able to add new books manually with Name of the book, Author, pages, year of publicity and small book description. 
 
 ## Skeleton plane ##
 All website will be created in same design. 
@@ -25,11 +24,10 @@ The wireframe for [mobile version](https://____) and [desktop version](https://_
 
 # User Stories: #
 1. As a user, I would like to have my personal profile.
-2. As a user, I would like to add new books in my profile.
-3. As a user, I would like to update books description after reading it.
-5. As a user, I would like to delete books from my list.
-6. As a user, I would like to browse through books on the website.
-7. As a user, I would like to log out from my profile.
+2. As a user, I would like to update books description after reading it.
+3. As a user, I would like to browse through books on the website.
+5. As a user, I would like to delete books.
+6. As a user, I would like to log out from my profile.
 
 Mockup
 [![responsive.png](https://____.png)](https://______)
@@ -44,14 +42,14 @@ Website has a simple structure and minimalistic design.
 
 
 ### Future features ###
-
+Wish List, purchase link
 
 
 # Technology used #
 - HTML 
 - CSS (the language to style HTML and make bootstrap more individual)
 - JavaScript
-- Google Fonts
+- Materialize 
 - Jshint
 - W3C school
 - W3C mark up validation service (to test HTML and CSS)
@@ -105,7 +103,7 @@ If you would like to clone a repositary follow theese steps:
 ### Heroku deployment ###
 
 # Credits # 
-
+Project been made with idea and guidelines of Tim Nelson and his mini project of Task Manager on Code Institute programme. 
 
 ### Content ###
 
