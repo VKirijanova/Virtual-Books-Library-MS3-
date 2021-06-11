@@ -23,8 +23,13 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix"></i>
-                <input id="books_style" name="books_style" type="text" class="validate" required>
+                <i class="fas fa-folder-open prefix"></i>
+                <select id="books_style" name="books_style" class="validate" required>
+                    <option value="" disabled selected>Choose book style</option>
+                    {% for style in styles %}
+                        <option value="{{ style.books_style }}">{{ style.books_style }}</option>
+                    {% endfor %}
+                </select>
                 <label for="books_style">Book Style</label>
             </div>
         </div>
