@@ -4,12 +4,12 @@
     <ul class="collapsible">
         {% for book in books %}
         <li>
-            <div class="collapsible-header text-shadow">
+            <div class="collapsible-header yellow accent-4 text-shadow">
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
                     {% if session.user %}
-                    <a href="{{ url_for('delete_books', books_id=book._id) }}" class="btn-small green accent-4">Delete</a>
-                    <a href="{{ url_for('edit_books', books_id=book._id) }}" class="btn-small light-blue accent-4">Edit</a>
+                    <a href="{{ url_for('delete_books', books_id=book._id) }}" class="btn-small red accent-4">Delete</a>
+                    <a href="{{ url_for('edit_books', books_id=book._id) }}" class="btn-small red accent-4">Edit</a>
                     {% endif %}
                 </div>
                 <div class="col s9">
@@ -18,7 +18,7 @@
                 
             </div>
 
-            <div class="collapsible-body">
+            <div class="collapsible-body yellow accent-1">
                 <p>Style: {{ book.books_style }}</p>
                 <p>Description: {{ book.book_description }}</p>
                 <p>Pages: {{ book.book_pages }}</p>
