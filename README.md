@@ -30,7 +30,7 @@ Website designed in yellow colors, to match the theme of the app Books. Backgrou
 6. As a user, I would like to log out from my profile.
 
 Mockup
-[responsiveness.png](https://postimg.cc/PPVZqXJh)
+[![responsiveness.png](https://i.postimg.cc/MpqYdX8c/responsiveness.png)](https://postimg.cc/PPVZqXJh)
 
 The live version of project you can see [here.](https://virtual-books-library.herokuapp.com/)
 
