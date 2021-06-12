@@ -17,7 +17,8 @@ The main page will have list of books on the website, entered by all users. User
 ## Skeleton plane ##
 All website will be created in same design. The header will be fixed on the top with all required buttons. Extra information about books will be hiden in colapsable card.
 
-The wireframe for mobile phone and desktop will look the same[wireframe.png](https://postimg.cc/7bW0HPf4), however mobile version will have hamburger button to hide buttons.
+The wireframe for mobile phone and desktop will look the same, however mobile version will have hamburger button to hide buttons.
+[![mockup.png](https://i.postimg.cc/KvZN5Rb1/mockup.png)](https://postimg.cc/7bW0HPf4)
 
 ## Surfuce plane ##
 Website designed in yellow colors, to match the theme of the app Books. Background picture is not that bright, however gives the feeling of real live library.
@@ -68,7 +69,9 @@ Website has a collapsible books list with extra information about them inside. H
 
 # Testing #
 - HTML tested with W3C mark up validation service. I had some syntax issue only due to jinja template been used to build all pages.
-- CSS have been tested with W3C mark up validation service, error been showed:[Error.png](https://postimg.cc/Mnn7jBJG). After removing shadow from element, no errors was found.
+- CSS have been tested with W3C mark up validation service, error been showed:[![Error.png](https://i.postimg.cc/W1nXCm90/Error.png)](https://postimg.cc/Mnn7jBJG). 
+
+After removing shadow from element, no errors was found.
 
 - Javascript code passed in Jshint with no major issues, one undefined variable found - $.
 - Project's responsiveness checked on iPhone, Google Chrome, Microsoft Edge and worked perfectly.
@@ -107,7 +110,7 @@ On right side press button Log Out. It will log user out, redirect to Log In pag
 ### MongoDB ###
 
 The following collection was used for the books and books styles:
-[collection.png](https://postimg.cc/3kZ73RnJ) and [styles.png](https://postimg.cc/hfLR0vFb)
+[![collection.png](https://i.postimg.cc/Cx3KHn8D/collection.png)](https://postimg.cc/3kZ73RnJ) and [![styles.png](https://i.postimg.cc/gk5cmLN5/styles.png)](https://postimg.cc/hfLR0vFb)
 
 ### Managing Git ###
 1. I then added to my local repo using `git add -A`;
