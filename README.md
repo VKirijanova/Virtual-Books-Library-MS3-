@@ -49,14 +49,26 @@ Wish List, purchase link
 - HTML 
 - CSS (the language to style HTML and make bootstrap more individual)
 - JavaScript
-- Materialize 
+- jQuery
+
+- Gitpod
+- GitHub
+- MongoDb
+- Heroku
+- Flask
+- Jinja
+- Werkzeug
+- Materialize
+
+- Chrome DevTools
 - Jshint
 - W3C school
 - W3C mark up validation service (to test HTML and CSS)
 
 # Testing #
-- HTML tested with W3C mark up validation service. 
-- CSS have been tested with W3C mark up validation service
+- HTML tested with W3C mark up validation service. I had some syntax issue only due to jinja template been used to build all pages.
+- CSS have been tested with W3C mark up validation service, error been showed:[Error.png](https://postimg.cc/Mnn7jBJG). After removing shadow from element, no errors was found.
+
 - JavaScript code _______ Jshint with no major issues
 - Project's responsiveness ________ on iPhone, Google Chrome, Microsoft Edge
 
@@ -106,7 +118,8 @@ If you would like to clone a repositary follow theese steps:
 Project been made with idea and guidelines of Tim Nelson and his mini project of Task Manager on Code Institute programme. 
 
 ### Content ###
-
+1. https://unsplash.com/ - photo
+2. https://www.amazon.co.uk/books-used-books-textbooks/b?ie=UTF8&node=266239
 
 ### Acknowledgements ###
 My mentor Spencer Barriball for his support.
