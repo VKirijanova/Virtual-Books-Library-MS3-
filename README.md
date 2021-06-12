@@ -42,7 +42,7 @@ Website has a simple structure and minimalistic design.
 
 
 ### Future features ###
-Wish List, purchase link
+Wish List, purchase link, show how many charactares person must enter on log in or register
 
 
 # Technology used #
@@ -73,7 +73,9 @@ Wish List, purchase link
 - Project's responsiveness checked on iPhone, Google Chrome, Microsoft Edge and worked perfectly.
 
 # Manual Testing #
-
+Home page have a list of books, already added by users. By clicking on the book name, container collapse down and show extra information about the book. On right side you have Home, Log In and Register button, on mobile version buttons hiding in hamburger button.
+Press Log In button it will redirect you to log in page with form which require Username and Password. Both input areas are mandatory and will turn red if left empty. If user will log in wrong username or password, flash message will pop in with message "Incorrect Uername and/or Password". Username and Password have minimum of 5 caracters, which indicates with message "Match the requested format" if you type less than 5. After entering right username and password, press Log In button, it is redirecting user to their profile page.
+Press Register button it will redirect to register page with form. Username and Password have minimum of 5 caracters, which indicates with message "Match the requested format" if you type less than 5. After succesfully choosing new username and pasword, Sign Up botton will redirect user to their created profile page with flash message 
 
 ## Testing user stories ##
 1. As a user, I would like to have my personal profile.

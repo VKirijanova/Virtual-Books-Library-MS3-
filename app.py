@@ -45,7 +45,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Welcome to our library!")
-        return redirect(url_for("mypage"), username=session["user"])
+        return redirect(url_for("mypage", username=session["user"]))
     return render_template("register.html")
 
 
