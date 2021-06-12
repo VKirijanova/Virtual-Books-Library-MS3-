@@ -69,18 +69,18 @@ Wish List, purchase link
 - HTML tested with W3C mark up validation service. I had some syntax issue only due to jinja template been used to build all pages.
 - CSS have been tested with W3C mark up validation service, error been showed:[Error.png](https://postimg.cc/Mnn7jBJG). After removing shadow from element, no errors was found.
 
-- JavaScript code _______ Jshint with no major issues
-- Project's responsiveness ________ on iPhone, Google Chrome, Microsoft Edge
+- Javascript code passed in Jshint with no major issues, one undefined variable found - $.
+- Project's responsiveness checked on iPhone, Google Chrome, Microsoft Edge and worked perfectly.
+
+# Manual Testing #
 
 
 ## Testing user stories ##
-1. As a user, I would like to 
-
-2. As a user, I would like to 
-
-3. As a user, I would like to 
-
-4. As a user, I would like to 
+1. As a user, I would like to have my personal profile.
+2. As a user, I would like to update books description after reading it.
+3. As a user, I would like to browse through books on the website.
+5. As a user, I would like to delete books.
+6. As a user, I would like to log out from my profile.
 
 ### Issues ###
 
